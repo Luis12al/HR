@@ -16,10 +16,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    "baseUrl": ".",                // 👈 NECESARIO
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
 
+    "ignoreDeprecations": "6.0"    // 👈 EVITA EL ERROR
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
